@@ -3,6 +3,7 @@ module.exports = {
         Object.assign(this, config)
         this.storeOriginalItemValues()
         this.addEventListenerToSelector(this.filterItemSelector, 'click', this.onFilterClick)
+        this.onFilterClick()
     },
 
     addEventListenerToSelector(selector, event, func) {
